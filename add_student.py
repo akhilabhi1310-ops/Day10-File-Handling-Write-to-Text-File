@@ -1,0 +1,15 @@
+student_id = input("Enter Student ID: ")
+name = input("Enter Name: ")
+age = input("Enter Age: ")
+course = input("Enter Course: ")
+marks = input("Enter Marks: ")
+
+record = f"{student_id},{name},{age},{course},{marks}"
+
+with open("students.txt", "a") as file:
+
+    file.write(record + "\n")
+
+print("Student Record Saved Successfully!")
+
+input("Press Enter to Exit...")
